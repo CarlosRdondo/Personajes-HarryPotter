@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personajes de Harry Potter </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1 class="mt-4 mb-4">Personajes de Harry Potter </h1>
+
+    <div class="form-group">
+        <label for="filter">Filtrar por casa:</label>
+        <select class="form-control" id="filter" onchange="filterCharacters()">
+            <option value="all">Todos</option>
+            <option value="Gryffindor">Gryffindor</option>
+            <option value="Hufflepuff">Hufflepuff</option>
+            <option value="Ravenclaw">Ravenclaw</option>
+            <option value="Slytherin">Slytherin</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="search">buscar por Nombre:</label>
+        <input type="text" class="form-control" id="search" oninput="filterCharacters()">
+    </div>
+
+    <div class="row" id="characters-container">
+           </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="script.js"></script> 
+</body>
+</html>
+
